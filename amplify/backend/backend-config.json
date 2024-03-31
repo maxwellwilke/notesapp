@@ -1,1 +1,22 @@
-{}
+{
+  "api": {
+    "notesapp": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDate": "2025-03-31T01:29:37.472Z",
+              "apiKeyExpirationDays": 365,
+              "description": "public notesapi"
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  }
+}
