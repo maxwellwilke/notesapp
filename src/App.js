@@ -2,9 +2,11 @@ import './App.css';
 import React, {useEffect, useReducer} from 'react';
 // V6: https://docs.amplify.aws/react/build-a-backend/graphqlapi/set-up-graphql-api/#add-your-first-record
 import { generateClient } from 'aws-amplify/api';
-import { List } from 'antd';
+import { List, Input, Button } from 'antd';
 import 'antd/dist/reset.css';
 import { listNotes } from './graphql/queries';
+import { v4 as uuid } from 'uuid';
+import { createNote as CreateNote } from './graphql/mutations';
 
 const initialState = {
   notes: [],
